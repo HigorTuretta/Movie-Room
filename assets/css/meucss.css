@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+body {
+	margin: 0;
+	padding: 0;
+	background-image: url("../img/background.jpg");
+	background-size: cover;
+}
+
+h1, p {
+	text-shadow: black 3px 2px;
+	z-index: 100;
+}
+
+/* GAME IMAGE AREA */
+.gameStage {
+	margin-left: 50px;
+}
+
+.game {
+	width: 100%;
+	background-color: transparent;
+}
+
+.game img {
+	width: 100%;
+	height: auto;
+}
+/* FIM */
+
+/* INPUT PARA INFORMAR O FILME */
+.insertNome input {
+	width: 100%;
+	border: 0 none;
+	outline: 0;
+	background-color: rgba(0, 0, 0, 0.3);
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-family: 'Sriracha', cursive;
+	color: rgb(233, 233, 233);
+	font-size: 32px;
+}
+
+.insertNome input:hover {
+	background-color: rgba(0, 0, 0, 0.3);
+}
+/* FIM */
+
+/* PONTOS (PRECISA SER ALTERADO) */
+#pontuacao {
+	width: 50px;
+	margin-left: 5px;
+	margin-right: -20px;
+	margin-bottom: 6px;
+	color: white;
+	font-size: 25px;
+	background-color: transparent;
+	border: 0;
+}
+/* FIM PONTOS */
+
+/* VIDAS */
+.game-block{
+	position: relative;
+}
+.lifes-div{
+	position: absolute;
+	right: 30px;
+	top: 10px;
+}
+.lifes{
+	max-width: 42px;
+}
+.lifes-div img:hover{
+	transform: scale(1.1);
+}
+/* FIM VIDAS */
+
+/* TESTE MARCAÇÃO NA IMAGEM REFERENCIAS ACERTADAS */
+.points{
+	position: absolute;
+	left: 14.5%;
+	top: 45%;
+}
+.point{
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: white;
+	box-shadow: 0 0  15px 6px white;
+	opacity: 0.7;
+}
+/* FIM */
