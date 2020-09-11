@@ -1,7 +1,3 @@
-
-const filmes = $.getJSON("assets/js/filmes.json");
-console.log(filmes);
-
 $(document).ready(function (e) {
 
     const txtFilme = document.getElementById('nomeFilme');
