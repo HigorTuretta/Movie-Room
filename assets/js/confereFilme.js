@@ -47,7 +47,8 @@ $(document).ready(function (e) {
     txtFilme.addEventListener('keypress', (event) => {
         if (event.keyCode === 13) {
             if (cont <= 3) {
-                if ($.trim(txtFilme.value) == '') {
+                //por enquanto da pra manter essa conferência se é String ou não, não há filmes com números ainda
+                if ($.trim(txtFilme.value) == '' || typeof txtFilme.value !== String) {
 
                 } else {
                     if (confereAcertados() === true) {
