@@ -1,4 +1,7 @@
 
+const filmes = $.getJSON("assets/js/filmes.json");
+console.log(filmes);
+
 $(document).ready(function (e) {
 
     const txtFilme = document.getElementById('nomeFilme');
@@ -15,6 +18,8 @@ $(document).ready(function (e) {
         'Procurando Nemo',
         'Toy Story'
     ];
+
+
 
     txtFilme.addEventListener('keypress', (event) => {
         if (event.keyCode === 13) {
