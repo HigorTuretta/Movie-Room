@@ -77,12 +77,15 @@ h1, p {
 /* FIM VIDAS */
 
 /* TESTE MARCAÇÃO NA IMAGEM REFERENCIAS ACERTADAS */
-.points{
+
+
+.pontinhos li{
 	position: absolute;
-	left: 14.5%;
-	top: 45%;
+	
 }
+
 .point{
+	
 	width: 10px;
 	height: 10px;
 	border-radius: 50%;
@@ -90,4 +93,50 @@ h1, p {
 	box-shadow: 0 0  15px 6px white;
 	opacity: 0.7;
 }
+
+.point:hover{
+	animation: ping;
+}
+
 /* FIM */
+
+
+
+
+/**
+ * ----------------------------------------
+ * animation ping
+ * ----------------------------------------
+ */
+
+
+.ping {
+	-webkit-animation: ping 0.8s ease-in-out 3 both;
+			animation: ping 0.8s ease-in-out 3 both;			
+}
+  @keyframes ping {
+	0% {
+	  -webkit-transform: scale(0.2);
+			  transform: scale(0.2);
+	  opacity: 0.8;
+	}
+	80% {
+	  -webkit-transform: scale(1.2);
+			  transform: scale(1.2);
+	  opacity: 0;
+	}
+	99% {
+	  -webkit-transform: scale(2.2);
+			  transform: scale(2.2);
+	  opacity: 0;
+	}
+	99.5%{
+		transform: scale(0.8);
+		opacity: 0.5;
+	}
+	100%{
+		transform: scale(0.5);
+		opacity: .8;
+	}
+	
+  }
