@@ -1,17 +1,77 @@
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 body {
 	margin: 0;
-	padding: 0;
+	height: 100%;
 	background-image: url("../img/background.jpg");
 	background-size: cover;
 }
+
+.body-content {
+	min-height: 100%;
+	margin-bottom: 70px;
+}
+
+/* RODAPÉ */
+
+.footer {
+	position: absolute;
+	width: 100%;
+	height: 70px;
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+.rodape {
+	height: 70px;
+	width: 100%;
+	margin-top: 5px;
+}
+
+.rodape span {
+	color: antiquewhite;
+}
+
+.rodape .direitos {
+	text-align: right;
+}
+.direitos:hover{
+	cursor: pointer;
+}
+
+/* SHARE LINKS */
+
+.share {
+	font-size: 25px;
+}
+
+.share a {
+	text-decoration: none;
+}
+
+.link {
+	color: gray;
+	cursor: pointer;
+}
+
+.link:hover {
+	color: rgb(72, 69, 69);
+}
+
+/* FIM RODAPÉ */
+
+/* HEADER */
 
 h1, p {
 	text-shadow: black 3px 2px;
 	z-index: 100;
 }
+.explica{
+	font-size: 16px;
+}
+
+/* FIM HEADER */
 
 /* GAME IMAGE AREA */
+
 .gameStage {
 	margin-left: 50px;
 }
@@ -25,9 +85,11 @@ h1, p {
 	width: 100%;
 	height: auto;
 }
+
 /* FIM */
 
 /* INPUT PARA INFORMAR O FILME */
+
 .insertNome input {
 	width: 100%;
 	border: 0 none;
@@ -44,9 +106,11 @@ h1, p {
 .insertNome input:hover {
 	background-color: rgba(0, 0, 0, 0.3);
 }
+
 /* FIM */
 
 /* PONTOS (PRECISA SER ALTERADO) */
+
 #pontuacao {
 	width: 50px;
 	margin-left: 5px;
@@ -57,50 +121,45 @@ h1, p {
 	background-color: transparent;
 	border: 0;
 }
+
 /* FIM PONTOS */
 
 /* VIDAS */
-.game-block{
+
+.game-block {
 	position: relative;
 }
-.lifes-div{
+
+.lifes-div {
 	position: absolute;
 	right: 30px;
 	top: 10px;
 }
-.lifes{
+
+.lifes {
 	max-width: 42px;
 }
-.lifes-div img:hover{
+
+.lifes-div img:hover {
 	transform: scale(1.1);
 }
+
 /* FIM VIDAS */
 
-/* TESTE MARCAÇÃO NA IMAGEM REFERENCIAS ACERTADAS */
+/* MARCAÇÃO NA IMAGEM REFERENCIAS ACERTADAS */
 
-
-.pontinhos li{
+.pontinhos li {
 	position: absolute;
-	
 }
 
-.point{
-	
+.point {
 	width: 10px;
 	height: 10px;
 	border-radius: 50%;
 	background-color: white;
-	box-shadow: 0 0  15px 6px white;
+	box-shadow: 0 0 15px 6px white;
 	opacity: 0.7;
 }
-
-.point:hover{
-	animation: ping;
-}
-
-/* FIM */
-
-
 
 
 /**
@@ -109,34 +168,178 @@ h1, p {
  * ----------------------------------------
  */
 
-
 .ping {
 	-webkit-animation: ping 0.8s ease-in-out 3 both;
-			animation: ping 0.8s ease-in-out 3 both;			
+	animation: ping 0.8s ease-in-out 3 both;
 }
-  @keyframes ping {
+
+@keyframes ping {
 	0% {
-	  -webkit-transform: scale(0.2);
-			  transform: scale(0.2);
-	  opacity: 0.8;
+		-webkit-transform: scale(0.2);
+		transform: scale(0.2);
+		opacity: 0.8;
 	}
 	80% {
-	  -webkit-transform: scale(1.2);
-			  transform: scale(1.2);
-	  opacity: 0;
+		-webkit-transform: scale(1.2);
+		transform: scale(1.2);
+		opacity: 0;
 	}
 	99% {
-	  -webkit-transform: scale(2.2);
-			  transform: scale(2.2);
-	  opacity: 0;
+		-webkit-transform: scale(2.2);
+		transform: scale(2.2);
+		opacity: 0;
 	}
-	99.5%{
+	99.5% {
 		transform: scale(0.8);
 		opacity: 0.5;
 	}
-	100%{
+	100% {
 		transform: scale(0.5);
 		opacity: .8;
 	}
-	
+}
+
+/* FIM MARCAÇÕES */
+
+/* ANIMAÇÃO ERRO */
+
+.shake-horizontal {
+	-webkit-animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+	animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+@-webkit-keyframes shake-horizontal {
+	0%, 100% {
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
+	}
+	10%, 30%, 50%, 70% {
+		-webkit-transform: translateX(-10px);
+		transform: translateX(-10px);
+	}
+	20%, 40%, 60% {
+		-webkit-transform: translateX(10px);
+		transform: translateX(10px);
+	}
+	80% {
+		-webkit-transform: translateX(8px);
+		transform: translateX(8px);
+	}
+	90% {
+		-webkit-transform: translateX(-8px);
+		transform: translateX(-8px);
+	}
+}
+
+@keyframes shake-horizontal {
+	0%, 100% {
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
+	}
+	10%, 30%, 50%, 70% {
+		-webkit-transform: translateX(-10px);
+		transform: translateX(-10px);
+	}
+	20%, 40%, 60% {
+		-webkit-transform: translateX(10px);
+		transform: translateX(10px);
+	}
+	80% {
+		-webkit-transform: translateX(8px);
+		transform: translateX(8px);
+	}
+	90% {
+		-webkit-transform: translateX(-8px);
+		transform: translateX(-8px);
+	}
+}
+
+/* FIM ANIMAÇÃO ERRO */
+
+/* BLINK ANIMATION */
+
+.blink-1 {
+	animation: blink-1 0.6s both;
+}
+@keyframes blink-1 {
+	0%, 50%, 100% {
+		opacity: 1;
+	}
+	25%, 75% {
+		opacity: 0;
+	}
+}
+
+/* FIM BLINK */
+
+/* BOTOES */
+.btnsGame{
+	position: absolute;
+	width: 50%;
+	top: 25%;
+	left: 25%;
+}
+.btnsGame button{
+	width: 100%;
+	height: 40px;
+	background-color: transparent;
+	color: white;
+}
+
+/* FIM BOTOES */
+
+/* GAME OVER ANIMATION */
+.fade-in-fwd {
+	animation: fade-in-fwd 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+ @keyframes fade-in-fwd {
+	0% {
+	  transform: translateZ(-80px);
+	  opacity: 0;
+	}
+	100% {
+	  transform: translateZ(0);
+	  opacity: 1;
+	}
   }
+  
+/* FIM GAME OVER ANIMATION */
+
+
+@media only screen and (max-width: 940px) {}
+
+@media only screen and (max-width: 670px) {
+	.lifes {
+		max-width: 23px;
+	}
+	.pontos {
+		margin-left: 25vw;
+	}
+	.share {
+		font-size: 18px;
+	}
+	.rodape {
+		margin-top: 10px;
+	}
+}
+
+@media only screen and (max-width: 570px) {
+	.explica{
+		font-size: 12px;
+	}
+	#nomeFilme{
+		font-size: 16px;
+	}
+	.btnsGame{
+		font-size: 10px;
+		left: 35%;
+		top: 18%;
+	}
+
+	.btnsGame button{
+		width: 58%;
+		height: 30px;
+		background-color: transparent;
+		color: white;
+		
+	}
+}
