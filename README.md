@@ -2,7 +2,7 @@
  Descubra o nome dos filmes através das 45 referências deixadas no quarto.
  
  
- ### Será que você será capaz de achar todos?
+ ### Você será capaz de achar todos?
 
 
 Este Mini-Game foi inspirado pelo jogo conhecido como Popcorn Garage, e minha maior ambição no projeto foi colocar em prática tudo que eu havia aprendido sobre o básico de JS puro. 
