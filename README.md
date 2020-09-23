@@ -14,3 +14,7 @@ Com um pouco de conhecimento em Photoshop, fiz um levantamento de alguns filmes 
 Depois foi mesclar tudo que tinha aprendido com 1 mês de estudos em JS puro parar criar uma aberração da natureza que foi refeita cerca de 5 vezes. Enfim, cheguei em um código que achava aceitável, mas não 100% perfeito, para mim, ainda há muito que pode ser melhorado.
 
 >Foi muito gratificante uma idéia sair do papel, mesmo que não da forma totalmente esperada. **Mas foi incrivel!**
+
+![background - Copia](https://user-images.githubusercontent.com/69050147/94030371-1f47ae80-fd94-11ea-98a3-3b4a0146b950.jpg)
+
+
