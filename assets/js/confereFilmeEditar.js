@@ -279,8 +279,8 @@ const filmes = {
             "top": 19
         },
         {
-            "nome": "FOREST GUMP",
-            "englishName": "FOREST GUMP",
+            "nome": "FORREST GUMP",
+            "englishName": "FORREST GUMP",
             "left": 97.5,
             "top": 84
         },
