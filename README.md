@@ -1,6 +1,7 @@
 # Movie Room
  Descubra o nome dos filmes através das 45 referências deixadas no quarto.
  
+ ![](preview.gif)
  
  ### [Você será capaz de achar todos?](https://movieroom.netlify.app/)
 
